@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Programming Course - LearnSparks</title>
+  
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="../Styles.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===== Header/Navbar ===== -->
+
+    <nav class="navbar" data-aos="fade-down">
+      <div class="navbar-items">
+        <!-- Brand Logo + Name -->
+        <a href="../index.html" class="brand" data-aos="fade-right">
+          <img src="../images/Logo.png" alt="TechCKT Logo" class="brand-logo" />
+          <span>TechCKT</span>
+        </a>
+
+        
+        <!-- Search Bar -->
+<div class="nav-search" data-aos="zoom-in">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search courses..."
+    aria-label="Search courses"
+  />
+  <button class="search-icon" id="searchToggle">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+</div>
+
+
+       
+        <!-- Nav Menu Links -->
+        <div id="nav-menu" class="nav-menu-list" aria-hidden="true" data-aos="fade-left">
+          <a href="../index.html" class="nav-menu-item">Home</a>
+          <div class="nav-menu-item dropdown">
+            <button class="dropdown-btn">Courses <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="../courses/python.html">Python</a>
+              <a href="../courses/web-development.html">Web Development</a>
+              <a href="../courses/data-structure-algorithm.html">Data Structure</a>
+              <a href="../courses/c-programming.html">C Programming</a>
+              <a href="../courses/data-science.html">Data Science</a>
+            </div>
+          </div>
+          <a href="../index.html#blog" class="nav-menu-item">Blog</a>
+          <a href="../index.html#about" class="nav-menu-item">About</a>
+          <a href="../index.html#contact" class="nav-menu-item">Contact</a>
+          <a href="login.html" class="nav-menu-item sign-btn">Login</a>
+          <a href="register.html" class="nav-menu-item sign-btn">Register</a>
+        </div>
+        
+      </div>
+       <button
+          id="nav-toggle"
+          class="hamburger"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-aos="fade-left"
+        >
+          <i id="menu-icon" class="fa-solid fa-bars"></i>
+          <i id="close-icon" class="fa-solid fa-xmark hidden"></i>
+        </button>
+
+    </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <div class="hero-container">
+    <section class="hero">
+      <h2>👨‍💻 Ready to Master C Programming?</h2>
+      <p>Start from scratch. Code with confidence. Build real-world projects.</p>
+    <a href="#overview" class="hero-btn" data-aos="zoom-in" data-aos-delay="200">Explore</a>
+ </section>
+  </div>
+
+  <main class="course-container">
+
+   <section class="overview" id="overview">
+  <h2>Course Overview</h2>
+  <p>
+    C is one of the most foundational and powerful programming languages in the world. Known for its speed, efficiency, and close-to-hardware capabilities, it is widely used in operating systems, embedded systems, game engines, and more.
+  </p>
+  <p>
+    This course is designed for absolute beginners as well as those looking to refresh their knowledge of C. You’ll begin with understanding basic syntax and program structure, then move on to working with variables, data types, and operators.
+  </p>
+  <p>
+    As you progress, you'll gain hands-on experience with control flow (if-else, loops), functions, arrays, pointers, and string manipulation. Later modules will introduce you to advanced concepts like structures, file handling, memory allocation, and command-line utility development.
+  </p>
+  <p>
+    Each module includes examples, practice problems, and real-world applications to help solidify your understanding. By the end of this course, you'll have the confidence to write clean, efficient C programs — and even build a mini system utility as your final project.
+  </p>
+</section>
+
+
+    <section class="modules">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>🔤 C syntax, variables, and data types</li>
+        <li>🔁 Loops, conditionals, and functions</li>
+        <li>📦 Arrays, pointers, and strings</li>
+        <li>📂 Structures, unions, and file handling</li>
+        <li>💻 Build command-line programs</li>
+        <li>💡 Final Project: Create a simple system utility</li>
+      </ul>
+    </section>
+    <section class="written-resources">
+  <h2>📖 Trusted Written Resources</h2>
+  <p>Prefer reading? These trusted websites offer detailed and structured tutorials to help you master C programming:</p>
+
+  <div class="resource-cards">
+
+    <a href="https://www.learn-c.org/" target="_blank" class="resource-card">
+      <img src="../images/learnc.png" alt="Learn-C Logo" />
+      <div class="resource-info">
+        <h3>Learn-C.org</h3>
+        <p>Interactive in-browser C tutorials with real-time code execution.</p>
+      </div>
+    </a>
+
+    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank" class="resource-card">
+      <img src="../images/TP.png" alt="TutorialsPoint Logo" />
+      <div class="resource-info">
+        <h3>TutorialsPoint</h3>
+        <p>Clear, example-driven C language tutorials for all levels.</p>
+      </div>
+    </a>
+
+    <a href="https://www.geeksforgeeks.org/c-programming-language/" target="_blank" class="resource-card">
+      <img src="../images/gfg.png" alt="GeeksforGeeks Logo" />
+      <div class="resource-info">
+        <h3>GeeksforGeeks</h3>
+        <p>Extensive articles, quizzes, and practice problems on C programming.</p>
+      </div>
+    </a>
+
+    <a href="https://www.programiz.com/c-programming" target="_blank" class="resource-card">
+      <img src="../images/programiz.png" alt="Programiz Logo" />
+      <div class="resource-info">
+        <h3>Programiz</h3>
+        <p>Beginner-friendly content with diagrams and real-world examples.</p>
+      </div>
+    </a>
+     <a href="https://www.w3schools.com/c/c_intro.php" target="_blank" class="resource-card">
+      <img src="../images/w3school.png" alt="Programiz Logo" />
+      <div class="resource-info">
+        <h3>w3schools</h3>
+        <p>Beginner-friendly content with diagrams and real-world examples in full details.</p>
+      </div>
+    </a>
+
+
+  </div>
+</section>
+
+
+    <section class="playlist">
+      <h2>📺 Recommended YouTube Playlists</h2>
+      <div class="videos">
+
+        <div class="video">
+          <h3>C Programming Tutorial – CollageWallah</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=mu_q_WOiA3PhiQIo&amp;list=PLxgZQoSe9cg1drBnejUaDD9GEJBGQ5hMt" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+          <h3>C Programming in Oneshot – Apna College</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/irqbmMNs2Bo?si=YQt47O7tHGmqHrWm" title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+          <h3>Learn C Programming in hindi– CodeWithHarry</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=YAUvVB9uLeVDZst1&amp;list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <h3>Learn C Programming in English– Jenny's lecture</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=HuSK1W2PQfQQABNm&amp;list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S" title="YouTube video player" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+
+      </div>
+    </section>
+   <section class="platforms">
+  <h2>📚 Available On These Platforms</h2>
+  <p>You can access our C Programming course on the following trusted learning platforms:</p>
+
+  <div class="platform-cards">
+    <a href="https://www.udemy.com" target="_blank" class="platform-card">
+      <img src="../images/udemy.png" alt="Udemy Logo" />
+      <span>Udemy</span>
+    </a>
+
+    <a href="https://www.coursera.org" target="_blank" class="platform-card">
+      <img src="../images/Coursera.png" alt="Coursera Logo" />
+      <span>Coursera</span>
+    </a>
+
+    <a href="https://www.edx.org" target="_blank" class="platform-card">
+      <img src="../images/edx.png" alt="edX Logo" />
+      <span>edX</span>
+    </a>
+
+    <a href="https://www.sololearn.com/en/learn/courses/coding-foundations" target="_blank" class="platform-card">
+      <img src="../images/solo.png" alt="sololearn Logo" />
+      <span>Sololearn</span>
+    </a>
+  </div>
+</section>
+
+<section class="practice-platforms">
+  <h2>🧪 Practice C Programming Online</h2>
+  <p>Sharpen your C skills through these interactive coding platforms:</p>
+
+  <div class="practice-cards">
+    <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-c" target="_blank" class="practice-card">
+      <img src="../images/hackerrank.png" alt="HackerRank Logo" />
+      <span>HackerRank</span>
+    </a>
+
+    <a href="https://www.codechef.com/practice/tags/c" target="_blank" class="practice-card">
+      <img src="../images/codechef.png" alt="CodeChef Logo" />
+      <span>CodeChef</span>
+    </a>
+
+    <a href="https://www.leetcode.com/tag/c/" target="_blank" class="practice-card">
+      <img src="../images/leetcode.png" alt="LeetCode Logo" />
+      <span>LeetCode</span>
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  
+   <!-- ===== Footer ===== -->
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+    
+    <!-- Brand -->
+    <div class="footer-brand">
+      <img src="../images/Logo.png" alt="TechCKT Logo" class="footer-logo">
+      <h3>TechCKT</h3>
+      <p>Empowering learners with coding, web development, and data science skills.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+       <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#courses">Courses</a></li>
+        <li><a href="../index.html#blog">Blog</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-envelope"></i> ankit@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechCKT. All rights reserved.</p>
+    <!-- Floating Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+    <p class="credit">Made with ❤️ by TechCKT Team</p>
+
+  </div>
+
+<script src="../script.js"></script>
+</body>
+</html>

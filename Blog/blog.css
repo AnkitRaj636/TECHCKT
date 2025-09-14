@@ -1,0 +1,329 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #1e1e2f;
+  line-height: 1.7;
+
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 1rem auto;
+  padding: 1.5rem 1rem;
+}
+
+
+/* Content */
+.blog-content {
+  background: #ffffff;
+  margin-top: 3rem;
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+  box-shadow:
+    0 15px 40px rgba(101, 50, 255, 0.15),
+    inset 0 0 25px rgba(101, 50, 255, 0.02);
+  animation: fadeIn 1.2s ease forwards;
+  transition: box-shadow 0.3s ease;
+  
+  top: 2rem;
+
+}
+
+.blog-content:hover {
+  box-shadow:
+    0 25px 60px rgba(101, 50, 255, 0.3),
+    inset 0 0 35px rgba(101, 50, 255, 0.05);
+}
+.blog-content img{
+  height: 2rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  margin-right: 1rem;
+}
+.author{
+  display: flex;
+  align-items: center;
+  justify-content:baseline;
+}
+.author p{
+  padding-bottom:1rem;
+}
+
+.blog-content h2 {
+  color: #4c6ef5;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.blog-content h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #4c6ef5;
+  border-radius: 4px;
+  margin-top: 6px;
+  transition: width 0.3s ease;
+}
+.blog-content h2:hover {
+  color: #845ef7;
+}
+.blog-content h2:hover::after {
+  width: 70px;
+  background: #845ef7;
+}
+
+.blog-content p {
+  margin-top: 0.8rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #444;
+  letter-spacing: 0.02em;
+  transition: color 0.25s ease;
+}
+.blog-content p code {
+  background-color: #eaeaff;
+  color: #4c6ef5;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  user-select: text;
+}
+
+/* Blockquote */
+blockquote {
+  margin: 2.5rem 0 0 0;
+  padding-left: 1.5rem;
+  border-left: 6px solid #845ef7;
+  font-style: italic;
+  color: #6c757d;
+  font-size: 1.25rem;
+  background: #f3f0ff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(132, 94, 247, 0.12);
+  transition: background-color 0.3s ease;
+}
+blockquote:hover {
+  background-color: #e0d8ff;
+}
+
+/* Footer */
+.blog-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #f9f9ff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(132, 94, 247, 0.1);
+  font-weight: 600;
+  color: #4c6ef5;
+  letter-spacing: 0.04em;
+}
+.blog-footer a {
+  color: #845ef7;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.blog-footer a:hover {
+  color: #5f3dc4;
+  text-decoration: underline;
+}
+.blog-footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #4c6ef5;
+  color: white;
+  border-radius: 0 0 28px 28px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* Animations */
+@keyframes floatIn {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+.animate-slide-up {
+  animation: slideUp 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 2.5rem;
+  }
+  .blog-hero {
+    height: 220px;
+  }
+  .blog-content {
+    margin-top: -70px;
+    padding: 2rem 1.5rem;
+  }
+  .blog-content h2 {
+    font-size: 1.6rem;
+  }
+  .blog-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Comment Section */
+.comment-section {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow:
+    0 15px 40px rgba(101, 50, 255, 0.15),
+    inset 0 0 20px rgba(101, 50, 255, 0.03);
+  animation: fadeIn 1.2s ease forwards;
+  transition: box-shadow 0.3s ease;
+}
+.comment-section:hover {
+  box-shadow:
+    0 25px 60px rgba(101, 50, 255, 0.25),
+    inset 0 0 30px rgba(101, 50, 255, 0.05);
+}
+.comment-section h2 {
+  color: #845ef7;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  user-select: none;
+  text-shadow: 0 1px 5px rgba(132, 94, 247, 0.4);
+}
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.comment-form input,
+.comment-form textarea {
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  border: 2px solid #d3d0f7;
+  border-radius: 16px;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  font-weight: 500;
+  color: #3a3a5c;
+  resize: vertical;
+  min-height: 48px;
+}
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-color: #845ef7;
+  box-shadow:
+    0 0 10px 2px rgba(132, 94, 247, 0.45);
+  outline: none;
+}
+.comment-form textarea {
+  min-height: 100px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.comment-form button {
+  align-self: flex-start;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+  box-shadow:
+    0 8px 20px rgba(101, 50, 255, 0.3);
+}
+.comment-form button:hover {
+  background: linear-gradient(135deg, #845ef7 0%, #5f3dc4 100%);
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow:
+    0 12px 30px rgba(132, 94, 247, 0.6);
+}
+
+/* Posted Comment Animation */
+.posted-comment {
+  margin-top: 2.5rem;
+  background: #e8ebff;
+  padding: 1.4rem 1.8rem;
+  border-radius: 24px;
+  border-left: 6px solid #845ef7;
+  box-shadow:
+    0 8px 30px rgba(132, 94, 247, 0.12);
+  animation: slideUp 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  color: #2e2e47;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+  animation: floatIn 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+/* Make blog-header full width and fix it to top */
+.blog-header {
+  width: 100vw; /* full viewport width */
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(38, 113, 252, 0.4);
+  z-index: 1000;
+  animation: floatIn 1.5s ease forwards;
+}
+
+/* Optional: add a subtle hover effect on header */
+.blog-header:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transition: background 0.5s ease;
+}
+
+/* Title */
+.blog-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: floatIn 1.5s ease forwards;
+  transition: color 0.3s ease;
+}
+
+/* Hover color effect on title */
+.blog-title:hover {
+  color: #f0e130; /* bright accent color on hover */
+  cursor: pointer;
+  text-shadow: 0 0 8px #f0e130;
+}

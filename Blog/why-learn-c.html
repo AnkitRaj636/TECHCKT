@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Structures & Algorithms - TechCKT</title>
+  
+<link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="../Styles.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===== Header/Navbar ===== -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="navbar-items">
+      <!-- Brand Logo + Name -->
+      <a href="../index.html" class="brand" data-aos="fade-right">
+        <img src="../images/Logo.png" alt="TechCKT Logo" class="brand-logo" />
+        <span>TechCKT</span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="nav-search" data-aos="zoom-in">
+        <input type="text" id="search-input" placeholder="Search courses..." aria-label="Search courses" />
+        <button class="search-icon" id="searchToggle">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Nav Menu Links -->
+      <div id="nav-menu" class="nav-menu-list" aria-hidden="true" data-aos="fade-left">
+        <a href="../index.html" class="nav-menu-item">Home</a>
+        <div class="nav-menu-item dropdown">
+          <button class="dropdown-btn">Courses <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="../courses/python.html">Python</a>
+            <a href="../courses/web-development.html">Web Development</a>
+            <a href="../courses/data-structure-algorithm.html">Data Structure</a>
+            <a href="../courses/c-programming.html">C Programming</a>
+            <a href="../courses/data-science.html">Data Science</a>
+          </div>
+        </div>
+        <a href="../index.html#blog" class="nav-menu-item">Blog</a>
+        <a href="../index.html#about" class="nav-menu-item">About</a>
+        <a href="../index.html#contact" class="nav-menu-item">Contact</a>
+        <a href="login.html" class="nav-menu-item sign-btn">Login</a>
+        <a href="register.html" class="nav-menu-item sign-btn">Register</a>
+      </div>
+    </div>
+
+    <button id="nav-toggle" class="hamburger" aria-expanded="false" aria-controls="nav-menu" data-aos="fade-left">
+      <i id="menu-icon" class="fa-solid fa-bars"></i>
+      <i id="close-icon" class="fa-solid fa-xmark hidden"></i>
+    </button>
+  </nav>
+
+<!-- main content -->
+
+
+<br><br>
+<main class="blog-content container animate-fade-in">
+  <h1>🧠 Why Learning C is Still Important in 2025</h1>
+  <div class="author">
+<img src="../images/Logo.png" alt="Why Learn C" class="blog-image" />
+  <p class="blog-meta">By Ankit Raj | June 5, 2025</p>
+  
+</div>
+  <p>The C programming language has been around for over 50 years, yet it's still one of the most powerful and widely-used languages in the world. From system programming to embedded devices and compilers, C remains a foundational skill for every serious programmer.</p>
+
+  <h2>🔧 Control & Performance</h2>
+  <p>C gives you direct access to memory using pointers, manual memory management, and fine-grained control over how your program runs. This makes it a favorite in high-performance applications and system-level software.</p>
+
+  <h2>📦 Base for Other Languages</h2>
+  <p>Languages like C++, Java, Python, and Go are heavily influenced by C. Learning C makes it easier to understand how these languages work under the hood.</p>
+
+  <h2>🚀 Career & Competitive Coding</h2>
+  <p>Many tech interviews and competitive programming contests use C (or C++). Understanding how data structures and memory work in C can give you an edge.</p>
+
+  <h2>🎓 Embedded Systems & OS Development</h2>
+  <p>All major operating systems — Linux, Windows, and macOS — have components written in C. It's the language of choice for embedded systems and microcontrollers too.</p>
+
+  <blockquote>
+    “C is quirky, flawed, and an enormous success.” – Dennis Ritchie
+  </blockquote>
+</main>
+
+<!-- Comment Section -->
+<section class="comment-section container animate-fade-in">
+  <h2>Leave a Comment</h2>
+  <form class="comment-form" onsubmit="event.preventDefault(); showComment();">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <textarea id="comment" placeholder="Your Comment" required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+
+  <div id="comment-box" class="posted-comment hidden">
+    <p><strong id="userName"></strong> says:</p>
+    <p id="userComment"></p>
+  </div>
+</section>
+
+
+<!-- ===== Footer ===== -->
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <img src="../images/Logo.png" alt="TechCKT Logo" class="footer-logo">
+      <h3>TechCKT</h3>
+      <p>Empowering learners with coding, web development, and data science skills.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#courses">Courses</a></li>
+        <li><a href="../index.html#blog">Blog</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-envelope"></i> ankit@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechCKT. All rights reserved.</p>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <p class="credit">Made with ❤️ by TechCKT Team</p>
+  </div>
+
+<script src="../script.js"></script>
+</footer>
+</body>
+</html>

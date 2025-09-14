@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Structures & Algorithms - TechCKT</title>
+  
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="../Styles.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===== Header/Navbar ===== -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="navbar-items">
+      <!-- Brand Logo + Name -->
+      <a href="../index.html" class="brand" data-aos="fade-right">
+        <img src="../images/Logo.png" alt="TechCKT Logo" class="brand-logo" />
+        <span>TechCKT</span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="nav-search" data-aos="zoom-in">
+        <input type="text" id="search-input" placeholder="Search courses..." aria-label="Search courses" />
+        <button class="search-icon" id="searchToggle">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Nav Menu Links -->
+      <div id="nav-menu" class="nav-menu-list" aria-hidden="true" data-aos="fade-left">
+        <a href="../index.html" class="nav-menu-item">Home</a>
+        <div class="nav-menu-item dropdown">
+          <button class="dropdown-btn">Courses <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="../courses/python.html">Python</a>
+            <a href="../courses/web-development.html">Web Development</a>
+            <a href="../courses/data-structure-algorithm.html">Data Structure</a>
+            <a href="../courses/c-programming.html">C Programming</a>
+            <a href="../courses/data-science.html">Data Science</a>
+          </div>
+        </div>
+        <a href="../index.html#blog" class="nav-menu-item">Blog</a>
+        <a href="../index.html#about" class="nav-menu-item">About</a>
+        <a href="../index.html#contact" class="nav-menu-item">Contact</a>
+        <a href="login.html" class="nav-menu-item sign-btn">Login</a>
+        <a href="register.html" class="nav-menu-item sign-btn">Register</a>
+      </div>
+    </div>
+
+    <button id="nav-toggle" class="hamburger" aria-expanded="false" aria-controls="nav-menu" data-aos="fade-left">
+      <i id="menu-icon" class="fa-solid fa-bars"></i>
+      <i id="close-icon" class="fa-solid fa-xmark hidden"></i>
+    </button>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <div class="hero-container">
+    <section class="hero">
+      <h2>🧠 Ready to Master Data Structures & Algorithms?</h2>
+      <p>Learn core concepts, master problem-solving, and prepare for interviews and competitive coding challenges.</p>
+      <a href="#overview" class="hero-btn" data-aos="zoom-in" data-aos-delay="200">Explore</a>
+    </section>
+  </div>
+
+<main class="course-container">
+
+  <!-- ===== Course Overview ===== -->
+  <section class="overview" id="overview">
+    <h2>Course Overview</h2>
+    <p>
+      Data Structures & Algorithms (DSA) form the backbone of efficient software development. This TechCKT course is designed for beginners and intermediate learners to build a strong foundation in both theory and practical application.
+    </p>
+    <p>
+      You’ll start with understanding arrays, linked lists, stacks, and queues, gradually progressing to trees, graphs, and hash-based structures. Each concept is explained with real-world examples and hands-on exercises.
+    </p>
+    <p>
+      The course also emphasizes algorithmic thinking: searching, sorting, recursion, dynamic programming, and greedy algorithms will be covered with step-by-step illustrations. Learn to analyze time and space complexity to write optimal code.
+    </p>
+    <p>
+      By the end of this course, you'll confidently solve coding challenges, optimize programs, and tackle competitive programming problems. Real-life applications and project-based learning ensure you can apply your knowledge effectively in interviews or personal projects.
+    </p>
+  </section>
+
+  <!-- ===== Modules / What You'll Learn ===== -->
+  <section class="modules">
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>📦 Core Data Structures: Arrays, Stacks, Queues, Linked Lists, Trees, Graphs</li>
+      <li>🔍 Searching & Sorting Algorithms</li>
+      <li>🧠 Recursion, Dynamic Programming, and Greedy Methods</li>
+      <li>💻 Python, NumPy, Pandas for problem-solving</li>
+      <li>🛠️ Algorithm Design & Time Complexity Analysis</li>
+      <li>🚀 Final Project: Problem-solving Case Study</li>
+    </ul>
+  </section>
+
+  <!-- ===== Written Resources ===== -->
+  <section class="written-resources">
+    <h2>📖 Trusted Written Resources</h2>
+    <p>Prefer reading? These sites provide structured tutorials and exercises:</p>
+    <div class="resource-cards">
+      <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" class="resource-card">
+        <img src="../images/gfg.png" alt="GeeksforGeeks Logo" />
+        <div class="resource-info">
+          <h3>GeeksforGeeks</h3>
+          <p>Extensive tutorials, quizzes, and coding problems.</p>
+        </div>
+      </a>
+      <a href="https://www.programiz.com/dsa" target="_blank" class="resource-card">
+        <img src="../images/programiz.png" alt="Programiz Logo" />
+        <div class="resource-info">
+          <h3>Programiz</h3>
+          <p>Beginner-friendly content with examples and diagrams.</p>
+        </div>
+      </a>
+      <a href="https://www.tutorialspoint.com/data_structures_algorithms/" target="_blank" class="resource-card">
+        <img src="../images/TP.png" alt="TutorialsPoint Logo" />
+        <div class="resource-info">
+          <h3>TutorialsPoint</h3>
+          <p>Clear explanations and structured DSA notes.</p>
+        </div>
+      </a>
+      <a href="https://www.coursera.org/specializations/data-structures-algorithms" target="_blank" class="resource-card">
+        <img src="../images/Coursera.png" alt="Coursera Logo" />
+        <div class="resource-info">
+          <h3>Coursera</h3>
+          <p>University-level course covering all essential DSA topics.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Recommended YouTube Playlists ===== -->
+  <section class="playlist">
+    <h2>📺 Recommended YouTube Playlists</h2>
+    <div class="videos">
+      <div class="video">
+        <h3>DSA – CodeWithHarry</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=85J9mRl-7rZbsWaY&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>DSA Full Course – Apna College</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>DSA in Hindi – dataflair</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=8dLnOjmha1Hlj7u3&amp;list=PLf0LpPWikpPfA_vez2NndnYuQy6WkpTzc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Platforms ===== -->
+  <section class="platforms">
+    <h2>📚 Available On These Platforms</h2>
+    <p>You can also access our DSA content on these popular platforms:</p>
+    <div class="platform-cards">
+      <a href="https://www.udemy.com" target="_blank" class="platform-card">
+        <img src="../images/udemy.png" alt="Udemy Logo" /><span>Udemy</span>
+      </a>
+      <a href="https://www.coursera.org" target="_blank" class="platform-card">
+        <img src="../images/Coursera.png" alt="Coursera Logo" /><span>Coursera</span>
+      </a>
+      <a href="https://www.edx.org" target="_blank" class="platform-card">
+        <img src="../images/edx.png" alt="edX Logo" /><span>edX</span>
+      </a>
+      <a href="https://www.sololearn.com" target="_blank" class="platform-card">
+        <img src="../images/solo.png" alt="Sololearn Logo" /><span>Sololearn</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Practice Platforms ===== -->
+  <section class="practice-platforms">
+    <h2>🧪 Practice Data Structures & Algorithms</h2>
+    <p>Strengthen your DSA skills through these trusted coding platforms:</p>
+    <div class="practice-cards">
+      <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript" target="_blank" class="practice-card">
+        <img src="../images/hackerrank.png" alt="HackerRank Logo" /><span>HackerRank</span>
+      </a>
+      <a href="https://www.codechef.com/practice" target="_blank" class="practice-card">
+        <img src="../images/codechef.png" alt="CodeChef Logo" /><span>CodeChef</span>
+      </a>
+      <a href="https://leetcode.com/explore/" target="_blank" class="practice-card">
+        <img src="../images/leetcode.png" alt="LeetCode Logo" /><span>LeetCode</span>
+      </a>
+      <a href="https://practice.geeksforgeeks.org/" target="_blank" class="practice-card">
+        <img src="../images/gfg.png" alt="GeeksforGeeks Logo" /><span>GeeksforGeeks</span>
+      </a>
+      <a href="https://www.interviewbit.com/courses/programming/" target="_blank" class="practice-card">
+        <img src="../images/interviewbit.png" alt="InterviewBit Logo" /><span>InterviewBit</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+   <!-- ===== Footer ===== -->
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+    
+    <!-- Brand -->
+    <div class="footer-brand">
+      <img src="../images/Logo.png" alt="TechCKT Logo" class="footer-logo">
+      <h3>TechCKT</h3>
+      <p>Empowering learners with coding, web development, and data science skills.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#courses">Courses</a></li>
+        <li><a href="../index.html#blog">Blog</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-envelope"></i> ankit@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechCKT. All rights reserved.</p>
+    <!-- Floating Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+    <p class="credit">Made with ❤️ by TechCKT Team</p>
+
+  </div>
+
+<script src="../script.js"></script>
+</body>
+</html>
